@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    background-color: #ef936c9a;
+    
+}
+header{
+    height: 100px; overflow: hidden;
+    background-color: #9DDB80;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+     font-size: 30px;
+   
+
+
+}
+
+nav{
+    display:  flex;
+    gap:20px
+}
+
+header a{
+        text-decoration: none;
+         color:rgb(238, 235, 235);
+}
+
+#navbar-home{
+    display: flex;
+    align-items: center;
+   
+    text-decoration: none;
+
+}
+header img{
+    height: 80px;
+}
+
+
+#hero{
+    width: 100%;
+    
+    color: rgba(255, 255, 255, 0.877);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    overflow: hidden;
+    background-color: #9ddb808e;;
+}
+#hero div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+
+#hero img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#quien-soy p{
+    font-size: 1.3rem;
+
+}
+
+
+#info-sofia{
+    
+}
+
+#que-creo{
+    margin-top: 10px;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+
+}
+
