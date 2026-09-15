@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "five-server \"Act 6/src\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
