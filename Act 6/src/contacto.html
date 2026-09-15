@@ -1,103 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./recursos/imagenes/icon.webp">
-    <link rel="stylesheet" href="./recursos/estilos/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./recursos/imagenes/icon.webp" />
+    <link rel="stylesheet" href="./recursos/estilos/index.css" />
     <title>Contacto y Turnos - Lic. Mariana Beltrán</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="site-header">
-        <h1>Lic. Mariana Beltrán</h1>
-        <p>Psicóloga Clínica - Matrícula Profesional N° 48.215</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio y Servicios</a></li>
-                <li><a href="contacto.html">Solicitar Consulta</a></li>
-            </ul>
-        </nav>
+      <h1>Lic. Mariana Beltrán</h1>
+      <p>Psicóloga Clínica - Matrícula Profesional N° 48.215</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio y Servicios</a></li>
+          <li><a href="contacto.html">Solicitar Consulta</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main class="site-main">
-        <section>
-            <h2>Solicitud de Entrevista y Consulta</h2>
-            <p>Completá el siguiente formulario para coordinar una primera entrevista de admisión o consultar disponibilidad horaria. Te responderé por correo electrónico o WhatsApp dentro de las 24 a 48 horas hábiles.</p>
-        </section>
+      <section>
+        <h2>Solicitud de Entrevista y Consulta</h2>
+        <p>
+          Completá el siguiente formulario para coordinar una primera entrevista
+          de admisión o consultar disponibilidad horaria. Te responderé por
+          correo electrónico o WhatsApp dentro de las 24 a 48 horas hábiles.
+        </p>
+      </section>
 
-        <section>
-            <form action="contacto.html" method="get">
-                
-                <fieldset>
-                    <legend>Datos Personales</legend>
+      <section>
+        <form action="contacto.html" method="get">
+          <fieldset>
+            <legend>Datos Personales</legend>
 
-                    <label for="nombre">Nombre y Apellido:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="nombre" name="nombre" required />
 
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
 
-                    <label for="telefono">Teléfono / WhatsApp:</label>
-                    <input type="tel" id="telefono" name="telefono" required>
+            <label for="telefono">Teléfono / WhatsApp:</label>
+            <input type="tel" id="telefono" name="telefono" required />
 
-                    <label for="edad">Edad:</label>
-                    <input type="number" id="edad" name="edad" min="18" max="99">
-                </fieldset>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="18" max="99" />
+          </fieldset>
 
-                <fieldset>
-                    <legend>Detalles de la Consulta</legend>
+          <fieldset>
+            <legend>Detalles de la Consulta</legend>
 
-                    <label for="modalidad">Modalidad de atención preferida:</label>
-                    <select id="modalidad" name="modalidad" required>
-                        <option value="">-- Seleccionar modalidad --</option>
-                        <option value="online">Online (Videollamada)</option>
-                        <option value="presencial">Presencial (Consultorio en Belgrano, CABA)</option>
-                    </select>
+            <label for="modalidad">Modalidad de atención preferida:</label>
+            <select id="modalidad" name="modalidad" required>
+              <option value="">-- Seleccionar modalidad --</option>
+              <option value="online">Online (Videollamada)</option>
+              <option value="presencial">
+                Presencial (Consultorio en Belgrano, CABA)
+              </option>
+            </select>
 
-                    <label for="motivo">Motivo principal de consulta:</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="">-- Seleccionar motivo --</option>
-                        <option value="ansiedad-estres">Manejo de ansiedad y estrés</option>
-                        <option value="terapia-individual">Terapia individual para adultos</option>
-                        <option value="burnout">Desgaste laboral / Burnout</option>
-                        <option value="orientacion">Orientación vocacional / laboral</option>
-                        <option value="otro">Otro motivo</option>
-                    </select>
+            <label for="motivo">Motivo principal de consulta:</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">-- Seleccionar motivo --</option>
+              <option value="ansiedad-estres">
+                Manejo de ansiedad y estrés
+              </option>
+              <option value="terapia-individual">
+                Terapia individual para adultos
+              </option>
+              <option value="burnout">Desgaste laboral / Burnout</option>
+              <option value="orientacion">
+                Orientación vocacional / laboral
+              </option>
+              <option value="otro">Otro motivo</option>
+            </select>
 
-                    <label for="horario">Franja horaria de preferencia para las sesiones:</label>
-                    <select id="horario" name="horario">
-                        <option value="">-- Seleccionar preferencia --</option>
-                        <option value="manana">Mañana (09:00 a 13:00 hs)</option>
-                        <option value="tarde">Tarde (14:00 a 18:00 hs)</option>
-                        <option value="noche">Vespertino (18:00 a 21:00 hs)</option>
-                    </select>
+            <label for="horario"
+              >Franja horaria de preferencia para las sesiones:</label
+            >
+            <select id="horario" name="horario">
+              <option value="">-- Seleccionar preferencia --</option>
+              <option value="manana">Mañana (09:00 a 13:00 hs)</option>
+              <option value="tarde">Tarde (14:00 a 18:00 hs)</option>
+              <option value="noche">Vespertino (18:00 a 21:00 hs)</option>
+            </select>
 
-                    <label>¿Realizaste terapia psicológica anteriormente?</label>
-                    <input type="radio" id="terapia_si" name="experiencia_previa" value="si">
-                    <label for="terapia_si">Sí</label>
-                    <input type="radio" id="terapia_no" name="experiencia_previa" value="no">
-                    <label for="terapia_no">No</label>
+            <label>¿Realizaste terapia psicológica anteriormente?</label>
+            <input
+              type="radio"
+              id="terapia_si"
+              name="experiencia_previa"
+              value="si"
+            />
+            <label for="terapia_si">Sí</label>
+            <input
+              type="radio"
+              id="terapia_no"
+              name="experiencia_previa"
+              value="no"
+            />
+            <label for="terapia_no">No</label>
 
-                    <label for="mensaje">Breve descripción de lo que te gustaría trabajar o dudas adicionales:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" cols="50" placeholder="Escribí aquí tu mensaje..."></textarea>
+            <label for="mensaje"
+              >Breve descripción de lo que te gustaría trabajar o dudas
+              adicionales:</label
+            >
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              cols="50"
+              placeholder="Escribí aquí tu mensaje..."
+            ></textarea>
 
-                    <input type="checkbox" id="consentimiento" name="consentimiento" required>
-                    <label for="consentimiento">Acepto ser contactado/a por estos medios para coordinar la consulta.</label>
-                </fieldset>
+            <input
+              type="checkbox"
+              id="consentimiento"
+              name="consentimiento"
+              required
+            />
+            <label for="consentimiento"
+              >Acepto ser contactado/a por estos medios para coordinar la
+              consulta.</label
+            >
+          </fieldset>
 
-                <input type="submit" value="Enviar Solicitud">
-                <input type="reset" value="Borrar Formulario">
-
-            </form>
-        </section>
+          <input type="submit" value="Enviar Solicitud" />
+          <input type="reset" value="Borrar Formulario" />
+        </form>
+      </section>
     </main>
 
     <footer class="site-footer">
-        <p><a href="index.html">Volver a la página principal</a></p>
-        <p>Lic. Mariana Beltrán - Atención psicológica para jóvenes y adultos</p>
-        <p>Consultorio: Av. Cabildo 2200, Belgrano, CABA | Correo: contacto@licmarianabeltran.com</p>
+      <p><a href="index.html">Volver a la página principal</a></p>
+      <p>Lic. Mariana Beltrán - Atención psicológica para jóvenes y adultos</p>
+      <p>
+        Consultorio: Av. Cabildo 2200, Belgrano, CABA | Correo:
+        contacto@licmarianabeltran.com
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
