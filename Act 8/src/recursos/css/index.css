@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+ 
+}
+
+
+html{
+    font-family: 'Sora';
+    font-size: 1rem;
+
+}
+
+header,footer {
+    background-color: #d6cdb0;
+}
+
+header{ 
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 10px;
+
+}
+
+
+header li {
+    list-style: none;
+    margin-inline: 10px;
+    
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.header__logo-container{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+
+}
+.header-logo{
+    width: 100px;
+}
+.navbar__elements-container{
+    display: flex;
+
+    align-items: center;
+
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+    
+
+}
+.cottage-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.cottage{
+    display: flex;
+    width: 80%;
+
+    
+    border: solid 1px rgb(66, 64, 64);
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 200px;
+    border-color: rgb(98, 148, 49);
+
+
+}
+.cottage img{
+   width: 100%;
+    max-width: 200px;
+    z-index: 0;
+    transition: all 0.2s;
+}
+.cottage img:hover{
+    transform: scale(1.2);
+}
+.cottage__info{
+    margin: 0;
+    z-index:1;
+    background-color: white;
+    max-width: 60%;
+    padding: 10px;
+}
+
+
+.cottage_buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    color: rgb(98, 148, 49);
+    gap: 10px;
+        
+}
+
+.cottage_buttons a{
+    border: solid 2px ;
+    border-radius: 10px;
+    border-color: rgb(98, 148, 49);
+    text-decoration: none;
+    color: rgb(98, 148, 49);
+
+    padding: 20px;
+    transition: all 0.2s ease;
+}
+
+.cottage_buttons a:hover{
+    transform: scale(1.05);
+}
+
+
+.form__container form{
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.form__container form button{
+    all: unset;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(130, 209, 179);    
+       text-align: center;
+    border-radius: 30px;
+    border:  solid 2px rgb(255, 255, 255) ;
+    color: white;
+}
+.input__container {
+    display: flex;
+    flex-direction: column;
+   gap: 3px;
+
+}
+
+
+.input__container input{
+     width: 400px;
+     height: 30px;
+     grid-column: 2;
+}
+
+
+#fecha-inicio{
+
+    grid-column: 1/2;
+    grid-row: 4;
+}
+
+#fecha-fin{
+ 
+ grid-row: 4;
+ grid-column: 2/2;
+}
+
+#comentario{
+    width: 400px;
+    height: 150px;
+}

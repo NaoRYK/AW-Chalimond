@@ -1,0 +1,84 @@
+<!--Esta pagina deberia usar SPA, CSR-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+    <link rel="shortcut icon" href="./recursos/imagenes/cabana-de-madera.png" type="image/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+</head>
+
+<body>
+     <header class="header">
+        <a href="./index.html" class="header__logo-container">
+            
+            <span> Retiro Sustentable</span>
+            <img width="100px" class="header-logo" src="./recursos/imagenes/logo-rs.svg" alt="logo-inicio">
+
+        </a>
+        <nav class="navbar">
+            <ul class="navbar__elements-container">
+                <li class="navbar__element"><a href="index.html">Inicio</a></li>
+                <li  class="navbar__element" ><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-container"class="main-container">
+        <h1>Reservas</h1>
+        <h4>Contactanos</h4>
+
+        <div class="form__container">
+
+            <form action="./index.html" method="post">
+    
+                
+                <div class="input__container one">
+                <label for="nombre">
+                    Nombre completo
+                </label>
+                
+                <input type="text" name="nombre" id="nombre">
+                </div>
+    
+                <div class="input__container two">
+    
+                <label for="correo"> Correo electronico</label>
+                <input type="email" name="correo" id="correo">
+                </div>
+    
+                <div class="input__container three">
+    
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" id="telefono">
+                </div>
+    
+                <div class="input__container four">
+    
+                <label for="fecha-inicio">Fecha de inicio</label>
+                <input type="date" name="fecha-inicio" id="fecha-inicio">
+                </div>
+    
+                <div class="input__container five">
+    
+                <label for="fecha-fin">Fecha de fin</label>
+                <input type="date" name="fecha-fin" id="fecha-fin">
+                </div>
+                <div class="input__container">
+    
+                <label for="comentario six">Comentarios</label>
+                <textarea name="comentario" id="comentario"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
